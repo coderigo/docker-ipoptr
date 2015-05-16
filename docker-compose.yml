@@ -1,0 +1,11 @@
+simoner:
+    build : .
+    volumes:
+        - my-r-code:/my-r-code
+    ports:
+        - "80:8787"
+    hostname: simoner.rstudio
+    environment:
+        - ROOT=TRUE
+        - USER=simoner
+        - PASSWORD=boom
