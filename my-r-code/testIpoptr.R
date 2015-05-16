@@ -17,6 +17,7 @@ eval_grad_f <- function(x) {
 }
 
 # Nitty gritty!
+x0 <- c( -1.2, 1 ) 
 res <- ipoptr( x0=x0, eval_f=eval_f, eval_grad_f=eval_grad_f )
 
 # Done
