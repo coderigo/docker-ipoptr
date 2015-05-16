@@ -14,11 +14,17 @@ Everything (R, RStudio, ipoptr) is contained in this image. In addition, the dir
 
 ```
 [you@your-project]: mkdir my-r-code # place all your code here
-[you@your-project]: docker run -p 80:8787 -hostname: simoner -e ROOT=TRUE USER=simoner PASSWORD=boom -v $(pwd)/my-r-code:/my-r-code -d coderigo/docker-ipoptr
+[you@your-project]: docker run -p 80:8787 -hostname=simoner -e ROOT=TRUE USER=simoner PASSWORD=boom -v $(pwd)/my-r-code:/my-r-code -d coderigo/docker-ipoptr
 ```
 
-## Firing up (option B)
+## Firing up (option B - using docker-compose)
 
+```
+[you@your-project]: git clone https://github.com/coderigo/docker-ipoptr.git && cd docker-ipoptr
+[you@your-project]: docker-compose build # run only once
+[you@your-project]: docker-compose up
+[you@your-project]: docker-compose kill && docker-compose rm # kill and remove
+```
 
 ## Get into it
 
