@@ -28,7 +28,7 @@ Everything (R, RStudio, ipoptr) is contained in this image. In addition, the dir
 
 ## Get into it
 
-Now travel to the IP address reported by `echo $DOCKERHOST`, log in with the username `simoner` and password `boom` and begin developing. Your scripts (which you'll version control with git, right?) within R studio will be available by setting your working directory to `setwd("/my-r-code")`, even after killing the container.
+Now travel to the IP address reported by `echo $DOCKERHOST` or `boot2docker ip`, log in with the username `simoner` and password `boom` and begin developing. Your scripts (which you'll version control with git, right?) within R studio will be available by setting your working directory to `setwd("/my-r-code")`, even after killing the container.
 
 ## Example.
 
